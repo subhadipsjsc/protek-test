@@ -23,7 +23,7 @@ public class Student extends Person  {
 
     @Override
     public String toString() {
-        return "classStatus='" + classStatus + '\'' + super.toString();
+        return "Student: " + super.toString();
     }
 
 

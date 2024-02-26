@@ -19,6 +19,6 @@ public class Staff extends Employee  {
 
     @Override
     public String toString() {
-        return "title='" + title + '\'' +super.toString();
+        return "Staff: " + super.toString();
     }
 }

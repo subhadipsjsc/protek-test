@@ -1,52 +1,43 @@
 package people;
 
-import java.util.Date;
 
 public class Employee {
-    private String employeeName;
+    private String name;
     private String employeeNumber;
-    private Date hireDate;
+    private String hireDate;
 
-    // Constructors
-    public Employee(String employeeName, String employeeNumber, Date hireDate) {
-        this.employeeName = employeeName;
+    // Constructor with all arguments
+    public Employee(String name, String employeeNumber, String hireDate) {
+        this.name = name;
         this.employeeNumber = employeeNumber;
         this.hireDate = hireDate;
     }
 
-    // Accessor methods
-    public String getEmployeeName() {
-        return employeeName;
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmployeeNumber() {
         return employeeNumber;
     }
 
-    public Date getHireDate() {
-        return hireDate;
-    }
-
-    // Mutator methods
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
-    }
-
-    public void setEmployeeNumber(String employeeNumber) {
+    public void setEmployeeNumber(String employeeNumber) throws IllegalArgumentException {
+        if (!employeeNumber.matches("^\\d{3}-[A-M]$")) {
+            throw new IllegalArgumentException("Invalid employee number format.");
+        }
         this.employeeNumber = employeeNumber;
     }
 
-    public void setHireDate(Date hireDate) {
-        this.hireDate = hireDate;
+    public String getHireDate() {
+        return hireDate;
     }
 
-
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "Employee{" +
-                "employeeName=" + employeeName +
-                ", employeeNumber=" + employeeNumber +
-                ", hireDate=" + hireDate +
-                '}';
+    public void setHireDate(String hireDate) {
+        this.hireDate = hireDate;
     }
 }

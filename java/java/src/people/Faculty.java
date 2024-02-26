@@ -30,7 +30,6 @@ public class Faculty extends Employee  {
 
     @Override
     public String toString() {
-        return "officeHours='" + officeHours + '\'' +
-                ", rank='" + rank + '\'' + super.toString();
+        return "Faculty: " + super.toString();
     }
 }
