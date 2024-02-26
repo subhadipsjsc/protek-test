@@ -3,7 +3,7 @@ import people.ProductionWorker;
 public class Main {
     public static void main(String[] args) {
        try {
-            ProductionWorker worker = new ProductionWorker("John Doe", "123-C", "2023-10-26", 1, 25.00);
+            ProductionWorker worker = new ProductionWorker("Subhadip", "123-E", "2024-02-26", 1, 50.00);
             System.out.println("Employee Name: " + worker.getName());
             System.out.println("Employee Number: " + worker.getEmployeeNumber());
             System.out.println("Hire Date: " + worker.getHireDate());
