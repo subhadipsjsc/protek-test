@@ -1,5 +1,5 @@
 ### Folders
 
-Java projects are inside `Java` folder 
+Java projects are inside `java` folder 
 <br>
-Python projects are inside 'Python' folder
+Python projects are inside `python` folder
